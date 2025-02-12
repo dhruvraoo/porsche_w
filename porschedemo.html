@@ -1,0 +1,212 @@
+<html>
+    <head>
+        <link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+		<script
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js">
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+        .navbar {
+            position: relative;
+            justify-content: center;
+        }
+        .navbar-brand {
+            position: absolute;
+            left: 0;
+            border-radius:20%;
+        }
+        .navbar-nav {
+            position: absolute;
+            right: 0;
+        }
+        .navbar-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-shadow: rgb(48, 48, 48);
+            letter-spacing:4px;
+        }
+        .navbar-toggler {
+            border: none;
+            float: left;
+        }
+
+        #a1:hover
+        {
+                        
+            transition: 1s ease;
+        }
+        .carousel {
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        #car-image {
+            width: 300px;
+            height: auto;
+        }
+
+        .color-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+            </style>
+    </head>
+    <body data-bs-spy="scroll" style="background-color: rgb(62, 60, 60);">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <a class="navbar-brand" href="#">
+                    <img src="porsche logo.webp" width="50" height="50" style="margin-left: 15px;"class="rounded-pill">
+                </a>
+               
+                <span class="navbar-text mx-auto ">
+                    PORSCHE
+                </span>
+                <div class="navbar-nav">
+                    <a class="nav-link btn btn-signin " href="#" style=" margin-right:10px; background-color: #ffffff;color: rgb(34, 33, 33);border-radius: 20px; opacity: 0.8;">
+                       
+                    <a class="nav-link btn btn-signup" href="#" style=" margin-right:10px; background-color: black;color: white; border-radius: 25px; opacity: 0.8;">Sign Up</a>
+                </div>
+            </nav>
+            <div class="row">
+                <div class="col-md-8">
+                    <div id="carouselone" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselone" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselone" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselone" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="..." class="d-block w-100" >
+                          </div>
+                          <div class="carousel-item">
+                            <img src="..." class="d-block w-100" >
+                          </div>
+                          <div class="carousel-item">
+                            <img src="..." class="d-block w-100" >
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselone" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselone" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div id="a1" class="alert alert-dark col-md-2 content-align-center" style="width:50%; background-color: grey;">
+                            <button data-color="red" href="">
+                            <img src="porsche boxter wheel.jpg" style="height:150px; width:150px "  class="color-buttons rounded-circle img-thumbnail">
+                            </button>
+                        </div>
+                        <div id="a1" class="alert alert-dark col-md-2 " style=" background-color: grey;">
+                            <a href="">
+                            <img src="porsche cayman wheel.jpg" style="height:150px; width:150px"  class="rounded-circle img-thumbnail">
+                            </a>
+                        </div><br>
+                    </div>
+                    <div class="row">
+                        <div id="a2" class="alert alert-dark col-md-2 "  style="background-color: grey;">
+                            <a href=""> <!--to give another page link here--> 
+                            <img src="porsche carrera wheel.jpg" style="height:150px; width:150px"  class="rounded-circle img-thumbnail">
+                            </a>
+                        </div>  
+                        <div id="a2" class="alert alert-dark col-md-2 " style=" background-color: grey;" >
+                            <a href=""> <!--to give another page link here--> 
+                            <img src="porsche turbo wheel.jpg" style="height:150px; width:150px" class="rounded-circle img-thumbnail">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+               
+        </div>
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8"></div>
+                <div class="col-md-4">
+                    <table class="table table-striped table-bordered table-hover table-lg">
+                        <thead class="thead-dark">
+                            <tr align="center">
+                                <th>tyre</th>
+                                <th>price</th>
+                            </tr>
+                         </thead>
+                            <tr align="center">
+                                <td>boxer</td>
+                                <td>p</td>
+                            </tr>
+                            <tr align="center">
+                                <td>cayman</td>
+                                <td>p</td>
+                            </tr>
+                            <tr align="center">
+                                <td>carrera</td>
+                                <td>p</td>
+                            </tr>
+                            <tr align="center">
+                                <td>turbo</td>
+                                <td>p</td>
+                            </tr>
+                        </table>
+                </div>   
+            </div>
+        </div>
+        <div class="container">
+            <div class="btn btn-border btn-light">
+                <img src="front white porsche.webp" width="200" height="70">
+            </div>
+            <div class="btn btn-dark">
+                <img src="front black porsche.webp" width="200" height="70">
+            </div>
+            <div class="btn btn-warning">
+                <img src="front yellow porsche.webp" width="200" height="70">
+            </div>
+            <div class="btn btn-danger">
+                <img src="front red porshe.webp" width="200" height="70">
+            </div>
+        </div>
+        <div style="position: fixed;bottom: 0;left: 0;right:800px; background-color: #4CAF50; color: white; padding: 10px;
+            text-align: center;display: flex;justify-content:space-between ;align-items: center; 
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);">
+            <span>Enjoy you fav cars  configuration ad-free at just 9 Rs a month</span>
+            <span id="close-btn">&times;</span>
+        </div>
+        <div id="car-carousel" class="carousel">
+            <img id="car-image" src="images/default-car.png" alt="Car Image">
+        </div>
+        
+        <div class="color-buttons">
+            <button data-color="red" style="background-color: red;">Red</button>
+            <button data-color="blue" style="background-color: blue;">Blue</button>
+            <button data-color="green" style="background-color: green;">Green</button>
+        </div>
+        <script>
+            const carImage = document.getElementById("D:\sem 3 project\fsd project personal\main red view\red, boxter.webp");
+            const colorButtons = document.querySelectorAll(".color-buttons button");
+
+            // Add event listeners to each button
+            colorButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    const color = button.getAttribute("data-color"); // Get the color from the button
+                    carImage.src = `car1-${color}.png`; // Change the image source dynamically
+                });
+            });
+        </script>
+        
+       
+
+    </body>
+</html>
